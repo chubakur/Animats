@@ -11,22 +11,27 @@ import java.awt.*;
  */
 public class WorldPlot extends JPanel {
     private World world;
-    private int count_x, count_y;
+    int count_x, count_y;
     int x, y;
     private final int block_size = 10;
     WorldPlot(World world){
         this.world = world;
         x = y = 0;
-        count_x = 800/block_size - 0;
-        count_y = 600/block_size - 0;
     }
     @Override
     public void paintComponent(Graphics g){
+        Dimension size = this.getSize();
+        count_x = size.width/block_size;
+        count_y = size.height/block_size;
         super.paintComponent(g);
         for(int i=0;i<count_y;++i){
             for(int j =0;j<count_x;++j){
-                Cell cell = world.getCell(x+j, y+i);
-                cell.paintSelf(g, j*block_size, i*block_size, block_size);
+                try {
+                    Cell cell = world.getCell(x + j, y + i);
+                    cell.paintSelf(g, j*block_size, i*block_size, block_size);
+                }catch (ArrayIndexOutOfBoundsException e){
+                    continue;
+                }
             }
         }
     }

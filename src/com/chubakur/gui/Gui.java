@@ -32,7 +32,7 @@ public class Gui{
                     case KeyEvent.VK_DOWN : worldPlot.moveDown() ; break;
                     default: return;
                 }
-                window.setTitle(String.format("Animat World   [%d, %d]", worldPlot.x, worldPlot.y));
+                window.setTitle(String.format("Animat World   [%d, %d] [%d, %d]", worldPlot.x, worldPlot.y, worldPlot.x + worldPlot.count_x, worldPlot.y + worldPlot.count_y));
                 worldPlot.updateUI();
             }
         });
