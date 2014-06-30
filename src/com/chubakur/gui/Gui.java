@@ -30,9 +30,11 @@ public class Gui{
                     case KeyEvent.VK_LEFT : worldPlot.moveLeft() ; break;
                     case KeyEvent.VK_UP   : worldPlot.moveUp()   ; break;
                     case KeyEvent.VK_DOWN : worldPlot.moveDown() ; break;
+                    case KeyEvent.VK_NUMPAD9 : worldPlot.incBlockSize(); break;
+                    case KeyEvent.VK_NUMPAD7 : worldPlot.decBlockSize(); break;
                     default: return;
                 }
-                window.setTitle(String.format("Animat World   [%d, %d] [%d, %d]", worldPlot.x, worldPlot.y, worldPlot.x + worldPlot.count_x, worldPlot.y + worldPlot.count_y));
+                window.setTitle(String.format("Project \"Animal\"   [%d, %d] [%d, %d] ScaleFactor: %d", worldPlot.x, worldPlot.y, worldPlot.x + worldPlot.count_x, worldPlot.y + worldPlot.count_y, worldPlot.getBlockSize()));
                 worldPlot.updateUI();
             }
         });

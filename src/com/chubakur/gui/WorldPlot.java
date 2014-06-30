@@ -13,10 +13,20 @@ public class WorldPlot extends JPanel {
     private World world;
     int count_x, count_y;
     int x, y;
-    private final int block_size = 10;
+    private int block_size = 10;
     WorldPlot(World world){
         this.world = world;
         x = y = 0;
+    }
+    public int getBlockSize(){
+        return block_size;
+    }
+    public void incBlockSize(){
+        ++block_size;
+    }
+    public void decBlockSize(){
+        if(block_size > 1)
+            --block_size;
     }
     @Override
     public void paintComponent(Graphics g){
