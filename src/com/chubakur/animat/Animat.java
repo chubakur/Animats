@@ -1,7 +1,10 @@
 package com.chubakur.animat;
 
+import com.chubakur.util.PhysicalBody;
+
 /**
- * Created by User on 29.06.2014.
+ * Created by User on 30.06.2014.
  */
-public class Animat {
+public abstract class Animat extends PhysicalBody {
+
 }

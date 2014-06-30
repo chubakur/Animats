@@ -18,7 +18,7 @@ public class Gui{
     JMenu mapMenu;
     public Gui(final World world){
         this.world = world;
-        window = new JFrame(String.format("Animat World   [%d, %d]", 0, 0));
+        window = new JFrame(String.format("Проект \"Животное\"", 0, 0));
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setVisible(true);
         window.setSize(800, 600);
@@ -82,10 +82,24 @@ public class Gui{
                     case KeyEvent.VK_DOWN : worldPlot.moveDown() ; break;
                     case KeyEvent.VK_NUMPAD9 : worldPlot.incBlockSize(); break;
                     case KeyEvent.VK_NUMPAD7 : worldPlot.decBlockSize(); break;
+                    case KeyEvent.VK_ESCAPE : worldPlot.clearMarks(); break;
+                    case KeyEvent.VK_BACK_SLASH : worldPlot.showSelectedCellInfo(); return;
                     default: return;
                 }
-                window.setTitle(String.format("Project \"Animal\"   [%d, %d] [%d, %d] ScaleFactor: %d", worldPlot.x, worldPlot.y, worldPlot.x + worldPlot.count_x, worldPlot.y + worldPlot.count_y, worldPlot.getBlockSize()));
+                window.setTitle(String.format("Проект \"Животное\"   [%d, %d] [%d, %d] Размер блока: %d", worldPlot.x, worldPlot.y, worldPlot.x + worldPlot.count_x, worldPlot.y + worldPlot.count_y, worldPlot.getBlockSize()));
                 worldPlot.updateUI();
+            }
+        });
+        worldPlot.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                int x = (int)e.getPoint().getX();
+                int y = (int)e.getPoint().getY();
+                int blockSize = worldPlot.getBlockSize();
+                int nX = x/blockSize;
+                int nY = y/blockSize;
+                worldPlot.mark(nX+worldPlot.x, nY+worldPlot.y);
             }
         });
     }

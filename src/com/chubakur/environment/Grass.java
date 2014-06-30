@@ -23,6 +23,11 @@ public class Grass extends Cell {
         return "grass";
     }
 
+    @Override
+    public String toString(){
+        return String.format("Grass %d%%", getValue());
+    }
+
     public Integer getValue(){
         return (int)Math.floor(value);
     }

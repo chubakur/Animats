@@ -2,9 +2,12 @@ package com.chubakur.gui;
 
 import com.chubakur.environment.Cell;
 import com.chubakur.environment.World;
+import com.chubakur.util.*;
+import com.chubakur.util.Point;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.*;
 
 /**
  * Created by User on 29.06.2014.
@@ -14,6 +17,7 @@ public class WorldPlot extends JPanel {
     int count_x, count_y;
     int x, y;
     private int block_size = 10;
+    private java.util.List<Cell> markedCells = new ArrayList<Cell>();
     WorldPlot(World world){
         this.world = world;
         x = y = 0;
@@ -38,8 +42,12 @@ public class WorldPlot extends JPanel {
             for(int j =0;j<count_x;++j){
                 try {
                     Cell cell = world.getCell(x + j, y + i);
-                    if(cell != null)
-                        cell.paintSelf(g, j*block_size, i*block_size, block_size);
+                    if(cell != null) {
+                        cell.paintSelf(g, j * block_size, i * block_size, block_size);
+                        if(markedCells.contains(cell)){
+                            cell.markSelf(g, j * block_size, i * block_size, block_size);
+                        }
+                    }
                 }catch (ArrayIndexOutOfBoundsException e){
                     continue;
                 }
@@ -57,5 +65,19 @@ public class WorldPlot extends JPanel {
     }
     public void moveDown(){
         if(y + count_y < world.getSize()) ++y;
+    }
+    public void mark(int x, int y){
+        markedCells.clear();
+        markedCells.add(world.getCell(x, y));
+        updateUI();
+    }
+    public void clearMarks(){
+        markedCells.clear();
+    }
+    public void showSelectedCellInfo(){
+        if(!markedCells.isEmpty()){
+            Cell cell = markedCells.get(0);
+            JOptionPane.showMessageDialog(this.getParent(), cell.toString(), cell.getType(), JOptionPane.INFORMATION_MESSAGE);
+        }
     }
 }
