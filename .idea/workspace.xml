@@ -23,21 +23,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gui.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gui.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/chubakur/gui/Gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="663">
-              <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
-              <folding />
+            <state vertical-scroll-proportion="0.5810811" vertical-offset="261" max-vertical-offset="1462">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <element signature="e#1772#2604#0" expanded="true" />
+                <element signature="e#2593#2594#0" expanded="true" />
+                <element signature="e#2875#3803#0" expanded="true" />
+                <element signature="e#3792#3793#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorldPlot.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="WorldPlot.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chubakur/gui/WorldPlot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7545692" vertical-offset="0" max-vertical-offset="901">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="918">
+              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
               <folding>
                 <element signature="e#437#438#0" expanded="true" />
                 <element signature="e#470#471#0" expanded="true" />
@@ -68,9 +73,11 @@
       <file leaf-file-name="Cell.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chubakur/environment/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="391">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="408">
+              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,20 +85,37 @@
       <file leaf-file-name="World.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chubakur/environment/World.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2593" max-vertical-offset="4267">
-              <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="731">
+              <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#randGenerator#0;class#World#0" expanded="false" />
-                <element signature="e#1920#1944#0" expanded="true" />
-                <element signature="e#4798#4822#0" expanded="true" />
-                <element signature="e#4892#4922#0" expanded="true" />
-                <element signature="e#8490#8497#0" expanded="true" />
-                <element signature="e#8554#8561#0" expanded="true" />
-                <element signature="e#11567#11568#0" expanded="true" />
-                <element signature="e#11602#11603#0" expanded="true" />
-                <element signature="e#11641#11642#0" expanded="true" />
-                <element signature="e#11675#11676#0" expanded="true" />
+                <element signature="method#generator#0;class#World#0" expanded="false" />
+                <element signature="e#2440#2464#0" expanded="true" />
+                <element signature="e#5318#5342#0" expanded="true" />
+                <element signature="e#5412#5442#0" expanded="true" />
+                <element signature="e#9010#9017#0" expanded="true" />
+                <element signature="e#9074#9081#0" expanded="true" />
+                <element signature="e#11996#11997#0" expanded="true" />
+                <element signature="e#12040#12041#0" expanded="true" />
+                <element signature="e#12066#12067#0" expanded="true" />
+                <element signature="e#12101#12102#0" expanded="true" />
+                <element signature="e#12140#12141#0" expanded="true" />
+                <element signature="e#12174#12175#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Grass.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chubakur/environment/Grass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#619#620#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,14 +153,14 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/chubakur/Main.java" />
         <option value="$PROJECT_DIR$/src/com/chubakur/environment/Ground.java" />
-        <option value="$PROJECT_DIR$/src/com/chubakur/environment/Cell.java" />
         <option value="$PROJECT_DIR$/src/com/chubakur/environment/Grass.java" />
         <option value="$PROJECT_DIR$/src/com/chubakur/environment/Stone.java" />
         <option value="$PROJECT_DIR$/src/com/chubakur/environment/Water.java" />
         <option value="$PROJECT_DIR$/src/com/chubakur/util/Point.java" />
+        <option value="$PROJECT_DIR$/src/com/chubakur/environment/Cell.java" />
+        <option value="$PROJECT_DIR$/src/com/chubakur/gui/WorldPlot.java" />
         <option value="$PROJECT_DIR$/src/com/chubakur/environment/World.java" />
         <option value="$PROJECT_DIR$/src/com/chubakur/gui/Gui.java" />
-        <option value="$PROJECT_DIR$/src/com/chubakur/gui/WorldPlot.java" />
       </list>
     </option>
   </component>
@@ -489,7 +513,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -527,7 +551,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
           <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#1772#2604#0" expanded="true" />
+            <element signature="e#2593#2594#0" expanded="true" />
+            <element signature="e#2875#3803#0" expanded="true" />
+            <element signature="e#3792#3793#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -548,7 +577,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="391">
           <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -559,15 +590,18 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#randGenerator#0;class#World#0" expanded="false" />
-            <element signature="e#1920#1944#0" expanded="true" />
-            <element signature="e#4798#4822#0" expanded="true" />
-            <element signature="e#4892#4922#0" expanded="true" />
-            <element signature="e#8490#8497#0" expanded="true" />
-            <element signature="e#8554#8561#0" expanded="true" />
-            <element signature="e#11567#11568#0" expanded="true" />
-            <element signature="e#11602#11603#0" expanded="true" />
-            <element signature="e#11641#11642#0" expanded="true" />
-            <element signature="e#11675#11676#0" expanded="true" />
+            <element signature="method#generator#0;class#World#0" expanded="false" />
+            <element signature="e#2440#2464#0" expanded="true" />
+            <element signature="e#5318#5342#0" expanded="true" />
+            <element signature="e#5412#5442#0" expanded="true" />
+            <element signature="e#9010#9017#0" expanded="true" />
+            <element signature="e#9074#9081#0" expanded="true" />
+            <element signature="e#11996#11997#0" expanded="true" />
+            <element signature="e#12040#12041#0" expanded="true" />
+            <element signature="e#12066#12067#0" expanded="true" />
+            <element signature="e#12101#12102#0" expanded="true" />
+            <element signature="e#12140#12141#0" expanded="true" />
+            <element signature="e#12174#12175#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -614,23 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chubakur/environment/Grass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="731">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chubakur/animat/Animat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
@@ -646,19 +663,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chubakur/environment/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_51/src.zip!/java/util/TreeMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="18165" max-vertical-offset="37927">
           <caret line="1187" column="0" selection-start-line="1187" selection-start-column="0" selection-end-line="1187" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chubakur/util/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="578">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chubakur/environment/Grass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chubakur/environment/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="408">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chubakur/environment/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="731">
+          <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#randGenerator#0;class#World#0" expanded="false" />
+            <element signature="method#generator#0;class#World#0" expanded="false" />
+            <element signature="e#2440#2464#0" expanded="true" />
+            <element signature="e#5318#5342#0" expanded="true" />
+            <element signature="e#5412#5442#0" expanded="true" />
+            <element signature="e#9010#9017#0" expanded="true" />
+            <element signature="e#9074#9081#0" expanded="true" />
+            <element signature="e#11996#11997#0" expanded="true" />
+            <element signature="e#12040#12041#0" expanded="true" />
+            <element signature="e#12066#12067#0" expanded="true" />
+            <element signature="e#12101#12102#0" expanded="true" />
+            <element signature="e#12140#12141#0" expanded="true" />
+            <element signature="e#12174#12175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chubakur/gui/WorldPlot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="918">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <folding>
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -677,51 +752,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chubakur/util/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="578">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chubakur/environment/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2593" max-vertical-offset="4267">
-          <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#randGenerator#0;class#World#0" expanded="false" />
-            <element signature="e#1920#1944#0" expanded="true" />
-            <element signature="e#4798#4822#0" expanded="true" />
-            <element signature="e#4892#4922#0" expanded="true" />
-            <element signature="e#8490#8497#0" expanded="true" />
-            <element signature="e#8554#8561#0" expanded="true" />
-            <element signature="e#11567#11568#0" expanded="true" />
-            <element signature="e#11602#11603#0" expanded="true" />
-            <element signature="e#11641#11642#0" expanded="true" />
-            <element signature="e#11675#11676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chubakur/gui/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="663">
-          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chubakur/gui/WorldPlot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7545692" vertical-offset="0" max-vertical-offset="901">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.5810811" vertical-offset="261" max-vertical-offset="1462">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#1772#2604#0" expanded="true" />
+            <element signature="e#2593#2594#0" expanded="true" />
+            <element signature="e#2875#3803#0" expanded="true" />
+            <element signature="e#3792#3793#0" expanded="true" />
           </folding>
         </state>
       </provider>

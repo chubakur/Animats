@@ -3,6 +3,7 @@ package com.chubakur.environment;
 import com.chubakur.util.Point;
 import javafx.util.Pair;
 
+import java.io.*;
 import java.util.*;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -11,6 +12,17 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 public class World {
     private Cell[][] cells;
+    public void save(File file) throws IOException{
+        ObjectOutputStream filestream = new ObjectOutputStream(new FileOutputStream(file));
+        filestream.writeObject(cells);
+        filestream.flush();
+        filestream.close();
+    }
+    public void load(File file) throws IOException, ClassNotFoundException{
+        ObjectInputStream filestream = new ObjectInputStream(new FileInputStream(file));
+        cells = (Cell[][])filestream.readObject();
+        filestream.close();
+    }
     void randGenerator(){
         boolean a = false;
         Class[] classes = {Grass.class, Ground.class};
@@ -28,7 +40,7 @@ public class World {
             }
         }
     }
-    void generator(){
+    public void generator(){
         Random random = new Random();
         for(int i=0;i<cells.length;++i){
             for(int j=0;j<cells.length;++j){
@@ -109,11 +121,11 @@ public class World {
         }
         System.out.println();
 
-        int water_sources = 10;
+        int water_sources = 8;
         int minimal_water_source_size = 100;
         int max_water_source_size = 10000;
         int rwater_sources = 0;
-        double water_inc_chance = 0.4;
+        double water_inc_chance = 0.45;
         while(rwater_sources < water_sources){
             int x = random.nextInt(cells.length);
             int y = random.nextInt(cells.length);
@@ -180,7 +192,7 @@ public class World {
             }
         }
         System.out.println();
-        int little_island_size = 10;
+        int little_island_size = 15;
         for(int i=0; i<cells.length; ++i){
             for(int j=0; j<cells.length; ++j){
                 Cell cell = getCell(j, i);
@@ -250,7 +262,6 @@ public class World {
     }
     public World(int size){
         cells = new Cell[size][size];
-        generator();
     }
     public int getSize(){
         return cells.length;

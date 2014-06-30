@@ -38,7 +38,8 @@ public class WorldPlot extends JPanel {
             for(int j =0;j<count_x;++j){
                 try {
                     Cell cell = world.getCell(x + j, y + i);
-                    cell.paintSelf(g, j*block_size, i*block_size, block_size);
+                    if(cell != null)
+                        cell.paintSelf(g, j*block_size, i*block_size, block_size);
                 }catch (ArrayIndexOutOfBoundsException e){
                     continue;
                 }
