@@ -22,7 +22,11 @@ public abstract class Cell extends PhysicalBody implements Serializable {
         g.fillRect(x, y, size, size);
     }
     public void markSelf(Graphics g, int x, int y, int size){
-        g.setColor(Color.YELLOW);
+        int red = 255 - getColor().getRed();
+        int green = 255 - getColor().getGreen();
+        int blue = 255 - getColor().getBlue();
+        g.setColor(new Color(red, green, blue));
+        g.drawRect(x, y, size-1, size-1);
         g.drawLine(x, y, x+size, y+size);
         g.drawLine(x, y+size, x+size, y);
     }
