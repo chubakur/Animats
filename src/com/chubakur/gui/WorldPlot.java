@@ -49,7 +49,7 @@ public class WorldPlot extends JPanel {
                         }
                     }
                 }catch (ArrayIndexOutOfBoundsException e){
-                    continue;
+                    break;
                 }
             }
         }
